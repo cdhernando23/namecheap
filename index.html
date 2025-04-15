@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Hern | Welcome to chrishern.me</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #87CEEB; /* Sky blue */
+        }
+
+        .block-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .block {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 1px solid #000;
+        }
+
+        .dirt-block {
+            background-color: #964B00; /* Dirt brown */
+        }
+
+        .stone-block {
+            background-color: #666; /* Stone gray */
+        }
+
+        .grass-block {
+            background-color: #32CD32; /* Grass green */
+        }
+
+        .player-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .player {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .player-head {
+            width: 20px;
+            height: 20px;
+            background-color: #FFD700; /* Steve's orange shirt */
+            border: 1px solid #000;
+        }
+
+        .player-body {
+            width: 20px;
+            height: 40px;
+            background-color: #0000FF; /* Blue shirt */
+            border: 1px solid #000;
+        }
+
+        .player-legs {
+            width: 20px;
+            height: 40px;
+            background-color: #0000FF; /* Blue pants */
+            border: 1px solid #000;
+        }
+
+        .text-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .text {
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            text-shadow: 2px 2px #000;
+        }
+
+        .mob-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding: 0 100px;
+        }
+
+        .creeper {
+            width: 50px;
+            height: 50px;
+            background-color: #00FF00; /* Green creeper */
+            border: 1px solid #000;
+            animation: creeper 2s linear infinite;
+        }
+
+        @keyframes creeper {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .zombie {
+            width: 50px;
+            height: 50px;
+            background-color: #008000; /* Green zombie */
+            border: 1px solid #000;
+            animation: zombie 2s linear infinite;
+        }
+
+        @keyframes zombie {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(20px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="block-container">
+        <div class="block dirt-block"></div>
+        <div class="block stone-block"></div>
+        <div class="block grass-block"></div>
+        <div class="block dirt-block"></div>
+        <div class="block stone-block"></div>
+        <div class="block grass-block"></div>
+    </div>
+    <div class="player-container">
+        <div class="player">
+            <div class="player-head"></div>
+            <div class="player-body"></div>
+            <div class="player-legs"></div>
+        </div>
+    </div>
+    <div class="text-container">
+        <div class="text">
+            <h1>Welcome to chrishern.me</h1>
+            <p>Your one-stop destination for awesomeness!</p>
+        </div>
+    </div>
+    <div class="mob-container">
+        <div class="creeper"></div>
+        <div class="zombie"></div>
+    </div>
+</body>
+</html>
